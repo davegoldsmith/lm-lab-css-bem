@@ -1,7 +1,74 @@
-/* You can delete / re-write this img class  */
-
-img {
-    max-width: 200px;
+:root {
+  --light: #c4b3a7;
+  --dark: #292a2d;
+  --light-header: #e7ecef;
+  --dark-header: #4f99f6;
+  --main-header: #e4b715;
 }
 
-/* Happy coding! */
+body {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+}
+
+/* structure*/
+.main-title {
+  font-size: 2.5rem;
+  color: var(--main-header);
+  background-color: var(--dark);
+  padding: 1rem;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  flex: 2;
+  border: 0.05rem solid lightslategray;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  box-shadow: -5px 0px 8px rgba(0, 0, 0, 0.12),
+    -10px 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.list {
+}
+
+.list--spaced {
+  line-height: 1.8;
+}
+
+.card--dark {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.card__image {
+  margin: 0;
+  height: auto;
+  max-width: 100%;
+}
+
+/* skins */
+.card--light {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.card__title {
+  border-bottom: 0.1rem solid;
+}
+
+.card__title--light {
+  border-color: var(--light-header);
+  color: var(--light-header);
+}
+
+.card__title--dark {
+  border-color: var(--dark-header);
+  color: var(--dark-header);
+}
