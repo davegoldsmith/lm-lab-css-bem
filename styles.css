@@ -1,7 +1,12 @@
 :root {
   --light: #c4b3a7;
   --dark: #292a2d;
+  --dusk: rgb(108, 102, 134);
+  --dawn: rgb(61, 44, 12);
+
   --light-header: #e7ecef;
+  --dusk-header: rgb(229, 223, 237);
+  --dawn-header: orange;
   --dark-header: #4f99f6;
   --main-header: #e4b715;
 }
@@ -42,9 +47,12 @@ body {
   line-height: 1.8;
 }
 
-.card--dark {
-  background-color: var(--dark);
-  color: var(--light);
+
+.card__button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 .card__image {
@@ -57,6 +65,21 @@ body {
 .card--light {
   background-color: var(--light);
   color: var(--dark);
+}
+
+.card--dark {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.card--dawn {
+  background-color: var(--dawn);
+  color: var(--light);
+}
+
+.card--dusk {
+  background-color: var(--dusk);
+  color: var(--light);
 }
 
 .card__title {
@@ -72,3 +95,25 @@ body {
   border-color: var(--dark-header);
   color: var(--dark-header);
 }
+
+.card__title--dusk {
+  border-color: var(--dusk-header);
+  color: var(--dusk-header);
+}
+
+.card__title--dawn {
+  border-color: var(--dawn-header);
+  color: var(--dawn-header);
+}
+
+.card__button--dark {
+  background-color: var(--dark-header);
+  color: var(--light);
+}
+
+.card__button--dawn {
+  background-color: var(--dawn-header);
+  color: var(--dark);
+}
+
+
